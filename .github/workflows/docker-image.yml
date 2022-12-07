@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag ${{SECRETS.DOCKER_USER}}/backend:latest
 
     - name: Docker Push
-      run: docker push ${{SECRETS.DOCKER_USER}}/backend:latest
+      run: docker push ${{SECRETS.DOCKER_USER}}/backend
